@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family_tree</title>
+    <link rel="stylesheet" href="C:\Users\pandiyan\OneDrive\Pictures\git\hi\public\css\style.css">
+</head>
+<body>
+    <div class="container">
+        <form id="one" class="Register page">
+            <div class="input">
+                <h1>Register</h1>
+                <label>Name</label>
+                <input type="text" required>
+                <label>Email</label>
+                <input type="email" required>
+                <label>Password</label>
+                <input type="password" required>
+                <label>Conform Password</label>
+                <input type="password" required>
+                <button type="submit">Register</button>
+                <p>Already have a account: <a href="#" onclick="my()">Login Now</a></p>
+
+
+            </div>
+        </form>
+
+        <form  id="two" class="login page">
+            <div class="input">
+                <h1>Login</h1>
+
+                <label>Email</label>
+                <input type="email" required>
+                <label>Password</label>
+                <input type="password" required>
+
+                <button type="submit">Login</button>
+                <p>Already have a account: <a href="#" onclick="hi()">Register Now</a></p>
+
+            </div>
+        </form>
+    </div>
+
+    <script>
+           var x=document.getElementById('one');
+           var y=document.getElementById('two');
+
+           function my(){
+            document.getElementById("one").style.left="-400px";
+            document.getElementById("two").style.left="0px";
+
+           };
+           function hi(){
+            document.getElementById("one").style.left="0px";
+            document.getElementById("two").style.left="400px";
+
+
+           };
+
+    </script>
+
+</body>
+</html>
